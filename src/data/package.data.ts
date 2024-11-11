@@ -1,4 +1,4 @@
-interface PackageData {
+export interface PackageData {
   id: string;
   name: string;
   link: string;

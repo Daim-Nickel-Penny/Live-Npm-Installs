@@ -1,0 +1,62 @@
+.each-package {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 34px;
+  padding: 0 15px 0 12px;
+  font-family: "Gilda Display", cursive;
+  font-size: 0.9rem;
+  font-weight: 800;
+  color: white;
+  background-color: #e75900;
+  border-radius: 90px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.each-package:hover {
+  cursor: pointer;
+  background-color: #cd5001;
+}
+
+.packages {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+  margin: 30px;
+}
+
+@media (max-width: 1200px) {
+  .each-package {
+    font-size: 0.85rem;
+    padding: 0 12px 0 10px;
+  }
+
+  .packages {
+    margin: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .each-package {
+    font-size: 0.8rem;
+    padding: 0 10px 0 8px;
+  }
+
+  .packages {
+    margin: 15px;
+    gap: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  .each-package {
+    font-size: 0.75rem;
+    padding: 0 8px 0 6px;
+  }
+
+  .packages {
+    margin: 10px;
+    gap: 6px;
+  }
+}

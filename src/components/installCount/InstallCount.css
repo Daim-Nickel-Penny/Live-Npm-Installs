@@ -1,0 +1,88 @@
+.install-count {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.install-count-text {
+  font-size: 8rem;
+  font-weight: 800;
+  font-family: "Inter", system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+  margin: 0px;
+  padding: 0px;
+
+  position: relative;
+}
+
+.verified-icon {
+  width: 40px;
+  height: 40px;
+
+  position: absolute;
+
+  top: 0%;
+  right: -8%;
+}
+
+.install-count-sub-text {
+  font-size: 1.5rem;
+  font-weight: 500;
+  font-family: "Inter", system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+  margin: 0px;
+  padding: 0px;
+}
+
+@media (max-width: 1200px) {
+  .install-count-text {
+    font-size: 6rem;
+  }
+
+  .verified-icon {
+    width: 35px;
+    height: 35px;
+    top: 10%;
+    right: 25%;
+  }
+
+  .install-count-sub-text {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .install-count-text {
+    font-size: 4rem;
+  }
+
+  .verified-icon {
+    width: 30px;
+    height: 30px;
+
+    top: 10%;
+    right: 20%;
+  }
+
+  .install-count-sub-text {
+    font-size: 1.125rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .install-count-text {
+    font-size: 3rem;
+  }
+
+  .verified-icon {
+    width: 25px;
+    height: 25px;
+    top: 10%;
+    right: 15%;
+  }
+
+  .install-count-sub-text {
+    font-size: 1rem;
+  }
+}
