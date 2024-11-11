@@ -5,6 +5,20 @@
   gap: 10px;
 }
 
+.author-name {
+  font-family: "Inter", system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-weight: 800;
+  cursor: pointer;
+
+  transition: all 0.2s ease-in-out;
+}
+
+.author-name:hover {
+  text-decoration: underline;
+  font-style: italic;
+  color: #e75900;
+}
+
 .install-count-text {
   font-size: 8rem;
   font-weight: 800;
@@ -14,6 +28,14 @@
   padding: 0px;
 
   position: relative;
+
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+}
+
+.install-count-text:hover {
+  font-style: italic;
+  color: #e75900;
 }
 
 .verified-icon {
@@ -29,7 +51,7 @@
 .install-count-sub-text {
   font-size: 1.5rem;
   font-weight: 500;
-  font-family: "Inter", system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Gilda Display", cursive;
 
   margin: 0px;
   padding: 0px;
@@ -43,8 +65,8 @@
   .verified-icon {
     width: 35px;
     height: 35px;
-    top: 10%;
-    right: 25%;
+    top: 0%;
+    right: -8%;
   }
 
   .install-count-sub-text {
@@ -61,8 +83,8 @@
     width: 30px;
     height: 30px;
 
-    top: 10%;
-    right: 20%;
+    top: 0%;
+    right: -8%;
   }
 
   .install-count-sub-text {
@@ -78,8 +100,8 @@
   .verified-icon {
     width: 25px;
     height: 25px;
-    top: 10%;
-    right: 15%;
+    top: 0%;
+    right: -8%;
   }
 
   .install-count-sub-text {

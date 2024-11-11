@@ -1,19 +1,15 @@
 .nav {
   display: flex;
   flex-direction: row;
-
   align-items: center;
   justify-content: space-between;
-
   width: 100%;
 }
 
 .npm-logo {
   width: 40px;
   height: 18px;
-
   padding: 2rem;
-
   filter: grayscale(1);
   opacity: 0.6;
   transition: filter 0.2s ease-in-out;
@@ -28,9 +24,7 @@
 .github-logo {
   width: 25px;
   height: 25px;
-
   padding: 2rem;
-
   filter: grayscale(1);
   opacity: 0.5;
   transition: filter 0.2s ease-in-out;
@@ -40,4 +34,46 @@
   filter: grayscale(0);
   opacity: 1;
   cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+  .npm-logo {
+    width: 35px;
+    height: 16px;
+    padding: 1.5rem;
+  }
+
+  .github-logo {
+    width: 22px;
+    height: 22px;
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .npm-logo {
+    width: 30px;
+    height: 14px;
+    padding: 1rem;
+  }
+
+  .github-logo {
+    width: 20px;
+    height: 20px;
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .npm-logo {
+    width: 25px;
+    height: 12px;
+    padding: 0.5rem;
+  }
+
+  .github-logo {
+    width: 18px;
+    height: 18px;
+    padding: 0.5rem;
+  }
 }

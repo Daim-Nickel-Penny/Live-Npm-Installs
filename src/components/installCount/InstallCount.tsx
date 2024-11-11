@@ -44,7 +44,18 @@ export default function InstallCount({ installCount }: InstallCountProps) {
           title="Verified Installed Count by NPM's Official API"
         />
       </h1>
-      <h6 className="install-count-sub-text">Installs for Daim's Packages</h6>
+      <h6 className="install-count-sub-text">
+        Installs for{" "}
+        <span
+          className="author-name"
+          onClick={() =>
+            window.open("https://www.npmjs.com/~daimkhan", "_blank")
+          }
+        >
+          Daim's
+        </span>{" "}
+        Packages
+      </h6>
     </div>
   );
 }
