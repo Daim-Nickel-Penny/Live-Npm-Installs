@@ -18,10 +18,10 @@ function App() {
   }
 
   return (
-    <>
+    <div className="App">
       <h1>Total Downloads Across All Packages</h1>
       <p>{totalDownloads}</p>
-    </>
+    </div>
   );
 }
 
