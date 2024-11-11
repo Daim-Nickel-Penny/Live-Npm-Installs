@@ -19,8 +19,11 @@
 
 .bottom-image {
   position: fixed;
+
   bottom: -35%;
   left: 0;
   width: 100%;
   z-index: 0;
+
+  pointer-events: none;
 }

@@ -45,7 +45,7 @@ export default function InstallCount({ installCount }: InstallCountProps) {
         />
       </h1>
       <h6 className="install-count-sub-text">
-        Installs for{" "}
+        Live Installs for{" "}
         <span
           className="author-name"
           onClick={() =>
