@@ -54,6 +54,9 @@ export function usePackageDownloads(packageData: PackageData[]) {
         total += yearlyDownloads.reduce((acc, count) => acc + count, 0);
       }
 
+      // Introduce a 4-second delay after all processing
+      await new Promise((resolve) => setTimeout(resolve, 4000));
+
       return total;
     },
     {

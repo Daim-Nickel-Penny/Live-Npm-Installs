@@ -1,5 +1,5 @@
 import "./InstallCount.css";
-import verified from "../../assets/Twitter_Verified_Badge_Gold.svg.png";
+import verified from "../../assets/78303-verified-green.png";
 import { useEffect, useState } from "react";
 
 interface InstallCountProps {
@@ -46,12 +46,15 @@ export default function InstallCount({ installCount }: InstallCountProps) {
         }
       >
         {currentCount.toLocaleString()}
-        <img
-          src={verified}
-          alt="verified"
-          className="verified-icon"
-          title="Verified Installed Count by NPM's Official API"
-        />
+        <div>
+          <p className="verified-text">Verified</p>
+          <img
+            src={verified}
+            alt="verified"
+            className="verified-icon"
+            title="Verified Installed Count by NPM's Official API"
+          />
+        </div>
       </h1>
       <h6 className="install-count-sub-text">
         Live Installs for{" "}

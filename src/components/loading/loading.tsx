@@ -3,10 +3,10 @@ import "./loading.css";
 
 export default function Loading() {
   const [loadingTextIndex, setLoadingTextIndex] = useState<number>(0);
-  const loadingTextArray = ["Loading Assets", "Preparing Universe..."];
+  const loadingTextArray = ["📂Loading Assets...", "🌌Preparing Universe..."];
 
   useEffect(() => {
-    const intervalTime = 1500;
+    const intervalTime = 2000;
 
     if (loadingTextIndex < loadingTextArray.length - 1) {
       const interval = setInterval(() => {

@@ -34,7 +34,12 @@ function App() {
         <InstallCount installCount={totalDownloads} />
         <Packages />
 
-        <img className="bottom-image" alt="bottom-image" src={BottomImage} />
+        <img
+          className="bottom-image"
+          alt="bottom-image"
+          src={BottomImage}
+          loading="eager"
+        />
       </div>
     </div>
   );

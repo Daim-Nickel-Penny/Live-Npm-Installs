@@ -33,11 +33,6 @@
   cursor: pointer;
 }
 
-.install-count-text:hover {
-  font-style: italic;
-  color: #e75900;
-}
-
 .verified-icon {
   width: 40px;
   height: 40px;
@@ -46,6 +41,34 @@
 
   top: 0%;
   right: -8%;
+
+  transition: all 0.2s ease-in-out;
+}
+
+.verified-icon:hover {
+  transform: scale(1.1);
+}
+
+.verified-text {
+  padding: 0.3rem;
+
+  background-color: #24a759;
+  border-radius: 0.5rem;
+
+  font-size: 0.7rem;
+  font-weight: 800;
+  color: white;
+
+  position: absolute;
+
+  top: -8%;
+  right: -19%;
+
+  transition: all 0.2s ease-in-out;
+}
+
+.verified-text:hover {
+  background-color: #1c7a4d;
 }
 
 .install-count-sub-text {

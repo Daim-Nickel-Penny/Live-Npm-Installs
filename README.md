@@ -32,11 +32,38 @@ This project tracks the following three NPM packages:
 
 ## Accuracy of Data
 
-The data shown in this project is fetched from the official **NPM API**. It calculates the total install count for each of the above-mentioned packages from the year 2020 to 2024. The total downloads are the sum of the yearly install counts.
+The data displayed in this project is fetched directly from the official **NPM API**. It calculates the total install count for each of the listed packages from the year 2020 to 2024. The total downloads represent the sum of the yearly install counts across the specified periods.
 
-Since this is an open-source project, you can verify the code and data fetching logic by checking the source code.
+### Data Source and Verification
 
-Note: The data is 48 hours delayed, and this is from the official NPM API.
+- **Data Source**: The data is retrieved using the official NPM API endpoint: `https://api.npmjs.org/downloads/range/${period}/${packageName}`
+
+- **Custom Hook**: Please visit the `usePackageDownloads.ts` file which is a custom hook and is responsible for making API calls using the above periods and fetching the install counts for each package.
+
+- `period` in `usePackageDownloads` refers to the time range for fetching download counts, which is specified as:
+  ```
+  { start: "2020-01-01", end: "2021-01-01" },
+  { start: "2021-01-01", end: "2022-01-01" },
+  { start: "2022-01-01", end: "2023-01-01" },
+  { start: "2023-01-01", end: "2024-01-01" },
+  { start: "2024-01-01", end: "2025-01-01" }
+  ```
+- `packageName` is dynamically passed from the `package.data.ts` file, which contains the list of **my packages** displayed on the website.
+
+- **Staleness**: As per the official NPM API documentation, the data is delayed by 48 hours.
+
+### Data Integrity
+
+- **Unaltered Data**: No data fetched from the API is modified or altered. It is presented as is, ensuring transparency and accuracy.
+- **Open Source Code**: The entire codebase is open source. Users can verify the implementation and data fetching logic by reviewing the source files, including `usePackageDownloads` and `package.data.ts`.
+
+### Summary
+
+These install counts denote the cumulative downloads from the time of the first package creation up to the present date. Since the project is open-source, users are encouraged to inspect the logic and ensure the accuracy of the data presented.
+
+---
+
+_Note_: The data is delayed by 48 hours as per the official NPM API.
 
 ## How It Works
 
