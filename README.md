@@ -1,12 +1,14 @@
 # My Live NPM Stats
 
+<img alt="Live NPM stats Banner" src="./root-assets/banner.gif" width="100%" height="auto" style="border-radius: 8px;" />
+
 This project showcases the live NPM install count of my published packages using React, TypeScript, and Vite. It pulls data from the official NPM registry API to display install counts for the selected packages from the year 2020 onwards.
 
 ## Tech Stack
 
 - **React** (with TypeScript)
-- **Vite** (for fast development and bundling)
 - **React Query** (for efficient data fetching and caching)
+- **Vite** (for fast development and bundling)
 
 ### Caching:
 
