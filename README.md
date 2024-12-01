@@ -36,6 +36,8 @@ The data shown in this project is fetched from the official **NPM API**. It calc
 
 Since this is an open-source project, you can verify the code and data fetching logic by checking the source code.
 
+Note: The data is 48 hours delayed, and this is from the official NPM API.
+
 ## How It Works
 
 1. The app fetches the install data for each package using the official NPM API.

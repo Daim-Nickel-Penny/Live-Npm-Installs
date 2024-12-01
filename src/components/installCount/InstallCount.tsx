@@ -11,7 +11,8 @@ export default function InstallCount({ installCount }: InstallCountProps) {
 
   useEffect(() => {
     if (installCount) {
-      let start = 155380;
+      //subtract and get any value less than 500
+      let start = Math.max(installCount - 156, 956, 157, 956);
       const end = installCount;
       const duration = 2000;
       const increment = (end - start) / (duration / 10);
@@ -35,7 +36,15 @@ export default function InstallCount({ installCount }: InstallCountProps) {
       className="install-count"
       title="Verified Installed Count by NPM's Official API"
     >
-      <h1 className="install-count-text">
+      <h1
+        className="install-count-text"
+        onClick={() =>
+          window.open(
+            "https://github.com/Daim-Nickel-Penny/Live-Npm-Installs?tab=readme-ov-file#accuracy-of-data",
+            "_blank"
+          )
+        }
+      >
         {currentCount.toLocaleString()}
         <img
           src={verified}

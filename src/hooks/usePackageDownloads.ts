@@ -37,6 +37,7 @@ export function usePackageDownloads(packageData: PackageData[]) {
     { start: "2021-01-01", end: "2022-01-01" },
     { start: "2022-01-01", end: "2023-01-01" },
     { start: "2023-01-01", end: "2024-01-01" },
+    { start: "2024-01-01", end: "2025-01-01" },
   ];
 
   return useQuery(
